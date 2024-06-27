@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\gk\www\css\style.css">
+</head>
+<body>
+    <main>
+        <form action="" class="main__form">
+            <input type="text" class="main__input a"  placeholder="width">
+            <input type="text" class="main__input b" placeholder="height">
+            <input type="text" class="main__input res" placeholder="result">
+            <button class="main__button" onclick="calc()">Result</button>
+        </form>
+    </main>
+    <script>
+        
+        function calc(){
+            event.preventDefault();
+        baseValue = document.querySelector('.a').value;
+        heightValue = document.querySelector('.b').value;
+        document.querySelector('.res').value = (baseValue * heightValue) / 2;        
+        }
+    </script>
+   
+</body>
+</html>
